@@ -15,7 +15,6 @@ This was based on the tutorials and documentation found here:
 ## Prerequisites
 
 - Python 3.8+
-- uv package manager
 
 ## Installation
 

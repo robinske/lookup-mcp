@@ -43,11 +43,11 @@ async def get_lookup(phone_number: str) -> str:
     caller_name_info = data.get("caller_name", {})
     carrier_name = phone_info.get("name", "Unknown")
     carrier_type = phone_info.get("type", "Unknown")
+    caller_name = caller_name_info.get("caller_name", "Unknown")
     country_code = data.get("country_code", "Unknown")
     phone_number = data.get("phone_number", "Unknown")
 
-    return f"Phone Number: {phone_number}\nCountry Code: {country_code}\nCarrier: {carrier_name}\nType: {carrier_type}"
-
+    return f"Phone Number: {phone_number}\nCountry Code: {country_code}\nCarrier: {carrier_name}\nType: {carrier_type}\nCaller Name: {caller_name}"
 
 if __name__ == "__main__":
     # Initialize and run the server
